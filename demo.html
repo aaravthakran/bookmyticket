@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>book my show</title>
+    <link rel="stylesheet" href="./book.css">
+</head>
+<body>
+    <div>
+        <header id="header">
+            <div>
+               <div > 
+                <span >
+                    <img src="./src/icon.png" alt="book my show" height="50">
+                </span>
+               </div>
+               <div class="search-container">
+                <span id="search-icon"><img src="./src/search.png" alt="" height="20"></span>
+                <span><input type="text" placeholder="search for the movie" ></span>
+               </div>
+            </div>
+            <div>
+                <span>
+                    Delhi-NCR
+                </span>
+                <button onclick="showDropdown()"><img src="./src/down-arrow.png" alt="" height="27"></button> 
+                <button >
+                    Sign in
+                </button>
+                <button>
+                    <img src="./src/menu.png" alt="" height="20">
+                </button>
+               </div>
+        </header>
+    </div>
+    <div id="dropdownPage" class="dropdown-page">
+        
+        <!-- Display cities dropdown here (initially hidden) -->
+        <div class="overlay"></div> <!-- Background overlay -->
+        <div class="dropdown-content">
+            
+         <div id="city-search">
+            <img src="./src/search.png" alt="" height="15px">
+            <input type="text" placeholder="search for the city">
+         </div>
+         <div id="detect-location">
+            <span><img src="./src/location.png" alt="" height="20px"></span>
+             <span>Detect current location</span>
+        </div>
+         <div id="city-names">
+            
+            <div id="col">
+                <span> <img src="./src/mumbai.png" alt="" height="50px"></span>
+                <span>Mumbai</span>
+            </div>
+            <div id="col">
+                <span><img src="./src/delhi.png" alt="" height="50px"></span>
+                <span>Delhi</span>
+            </div>
+            <div id="col">
+                <span><img src="./src/kolkata.png" alt="" height="50px"></span>
+                <span>kolkata</span>
+            </div>
+            <div id="col">
+                <span> <img src="./src/chandigarh.png" alt="" height="50px"></span>
+                <span>Chandigarh</span>
+            </div>
+            <div id="col">
+                <span><img src="./src/chennai.png" alt="" height="50px"></span>
+                <span>Chennai</span>
+            </div>
+            <div id="col">
+                <span><img src="./src/hyderabad-charminar.png" alt="" height="50px"></span>
+                <span>Hyederabad</span>
+            </div>
+         </div>
+
+            <button onclick="hideDropdown()">Close</button>
+        </div>
+    </div>
+
+    <div id="header2">
+        <div>
+            <span>Movies</span>
+            <span>Stream</span>
+            <span>Events</span>
+            <span>Plays</span>
+            <span>Sports</span>
+            <span>Activities</span>
+        </div>
+        <div>
+            <span>ListyourShow</span>
+            <span>Corporates</span>
+            <span>Offers</span>
+            <span>Gift cards</span>
+        </div>
+    </div>
+   
+    <script src="script.js"></script> 
+</body>
+</html>
